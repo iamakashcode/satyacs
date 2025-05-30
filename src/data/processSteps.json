@@ -1,0 +1,53 @@
+[
+  {
+    "number": "01",
+    "title": "Submit application",
+    "description": "We begin by conducting a thorough assessment of your products and requirements.",
+    "details": [
+      "Compile all required documents", 
+      "Submit the application with required documents to BIS online and hardcopy to FMCD department",
+      "BIS authority will verify the application"
+    ]
+  },
+  {
+    "number": "02",
+    "title": "Query raised (if any)",
+    "description": "We help you prepare and organize all necessary documentation for the certification process.",
+    "details": [
+      "In case, any document or test equipment or any other requirement is missing or incomplete, communication will be done by email with applicant",
+      "If the application is found satisfactory in all respects, it will be recorded",
+      "Acknowledgement number will be allotted for future purpose"
+    ]
+  },
+  {
+    "number": "03",
+    "title": "Audit/Inspection",
+    "description": "We coordinate the testing of your products with accredited laboratories.",
+    "details": [
+      "BIS Officer will arrange a visit at factory premises of applicant on the mutually agreed date",
+      "Remittance of inspection/audit fee",
+      "BIS Officer will verify the manufacturing process, testing infrastructure and also test the product in your in-house laboratory",
+      "BIS Officer will collect the sample, seal it, and forward it for testing with an independent laboratory"
+    ]
+  },
+  {
+    "number": "04",
+    "title": "Sample Testing",
+    "description": "We assist in preparing for and managing the factory inspection process.",
+    "details": [
+      "Sample collected sent to BIS Approval Laboratory",
+      "BIS(FMCS) receive the test report",
+      "Charges for testing will be paid by the application firm"
+    ]
+  },
+  {
+    "number": "05",
+    "title": "Grant of License",
+    "description": "We guide you through the final stages of certification and ongoing compliance.",
+    "details": [
+      "Satisfactory inspection report of the auditor visited the factory premises, and test report of the product received according to Indian Standards",
+      "Applicant should pay a Licence fee, advance minimum Marking fee & if any outstanding due",
+      "Letter for Grant of Licence issued"
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Foreign Manufacturers Certification Scheme (FMCS)",
+    "description": "The Foreign Manufacturers Certification Scheme (FMCS) is tailored for manufacturers out of India who wish to export their products to the Indian market. Foreign manufacturers can apply for BIS certification through an Authorized Indian Representative (AIR) or by establishing their own representative office in India. FMCS certification facilitates international trade by ensuring that imported products meet Indian standards, improving consumer safety and protecting national interests. It smoothens the process for foreign manufacturers to certify their products in line with Indian regulations.",
+    "image": "/images/services/1.png",
+    "details": [
+      "Initial assessment and planning",
+      "Documentation preparation",
+      "Factory inspection coordination",
+      "Testing arrangement",
+      "Certification process management"
+    ]
+  },
+  {
+    "title": "ISI Mark Certification",
+    "description": "FMCS (ISI Mark) is a Scheme operated by the Bureau of Indian Standards since year 2000 under Scheme-I of Schedule-II, BIS Act, 2016 and (Conformity Assessment) Regulations, 2018 for foreign manufacturers. This scheme enables the overseas applicants/manufacturers to use the standard mark, which is also called ISI Mark, to sell their products in India. The foreign manufacturers Certification Department (FMCD) is the only eligible authority that can grant BIS Certificate for import to the foreign manufacturers. The major motive of BIS for granting a Manufacturing certificate to Foreign manufactures is that the public gets good quality, safe, reliable and risk-free products.",
+    "image": "/images/services/isi-mark-certification.jpg",
+    "details": [
+      "Product evaluation",
+      "Testing coordination",
+      "Documentation preparation",
+      "Factory inspection support",
+      "Certification process management"
+    ]
+  },
+  {
+    "title": "Compulsory Registration Scheme (CRS)",
+    "description": "BIS Licence for electronic products and their operation is governed by the conformity assessment scheme outlined in Scheme II of Schedule II of the BIS (Conformity Assessment) Regulations, 2018. Under the Compulsory Registration Scheme (CRS), the Bureau of Indian Standards issues a BIS registration certificate to manufacturers to use a standard mark with a unique registration number on their electronics and IT products. The products must be certified before being placed on the Indian market. The primary goals of CRS is to protect consumer safety, safeguard the environment, and enhance national security. These products must comply with relevant Indian standards and be tested in ACPI-registered laboratories. BIS CRS registration is a prerequisite for their sale or import into India. ",
+    "image": "/images/services/3.png",
+    "details": [
+      "Product assessment",
+      "Testing coordination",
+      "Documentation preparation",
+      "Application submission",
+      "Compliance monitoring"
+    ]
+  },
+  {
+    "title": "Certificate of Conformity (Scheme IV)",
+    "description": "The Bureau of Indian Standards (BIS) has begun issuing Certificates of Conformity in accordance with Scheme-IV of Schedule II of the BIS (Conformity Assessment) Regulation, 2018. The Bureau may issue a Certificate of Conformity (CoC) for goods and articles (products) that are manufactured in accordance with the specifications outlined in the relevant Indian Standards. A Certificate of Conformity from BIS is necessary for every manufacturer of a product covered by a CoC. Each product covered by mandatory CoC must be marked with the CoC Number. All CoC-covered products must be manufactured using BIS Standard-marked (ISI Marked) materials. Due to several factors such as national security, public interest, the prevention of unfair trade practices, etc., the government has made a number of products subject to mandatory compliance with Indian Standards through Quality Control Orders.",
+    "image": "/images/services/4.png",
+    "details": [
+      "Test plan development",
+      "Lab coordination",
+      "Sample preparation",
+      "Test monitoring",
+      "Report review"
+    ]
+  }
+]
