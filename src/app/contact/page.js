@@ -161,13 +161,13 @@ export default function Contact() {
                           </svg>
                         </dt>
                         <dd>
-                          <a className="hover:text-gray-900" href="tel:+919711027523">
-                            +91 9711027523
+                          <a className="hover:text-gray-900" href="tel:+919911466554">
+                            +91 9911466554
                           </a>
                         </dd>
                         <dd>
-                          <a className="hover:text-gray-900" href="tel:+919911466554">
-                            +91 9911466554
+                          <a className="hover:text-gray-900" href="tel:+919711027523">
+                            +91 9711027523
                           </a>
                         </dd>
                       </div>
