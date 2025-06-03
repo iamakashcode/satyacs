@@ -23,7 +23,7 @@ export default function Forms() {
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <Hero heading="Forms & Formats" description="Essential forms and templates for your certification process."/>
+        <Hero heading="Forms & Formats" description="Documents are subject to variation"/>
 
         {/* Forms List */}
         <section className="py-24 sm:py-32">

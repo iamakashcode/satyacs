@@ -92,50 +92,41 @@ export default function Services() {
         <Hero heading="Our Services" description="We offer a range of services to help you achieve your certification goals."/>
 
         {/* Services Grid */}
-        <section className="py-24 sm:py-32">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-              {services.map((service, index) => (
-                <motion.div
-                  key={service.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex flex-col justify-between rounded-2xl bg-white p-8 ring-1 ring-gray-200 xl:p-10"
-                >
-                  <div>
-                    <div className="relative h-48 w-full mb-6">
-                      <Image
-                        src={service.image}
-                        alt={service.title}
-                        fill
-                        className="rounded-lg object-cover"
-                      />
-                    </div>
-                    <h3 className="text-lg font-semibold leading-8 text-gray-900">{service.title}</h3>
-                    <p className="mt-4 text-sm leading-6 text-gray-600">{service.description}</p>
-                    <ul className="mt-6 space-y-3 text-sm leading-6 text-gray-600">
-                      {service.details.map((detail, i) => (
-                        <li key={i} className="flex gap-x-3">
-                          <svg className="h-6 w-5 flex-none text-[var(--primary-blue)]" viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                          </svg>
-                          {detail}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <Link
-                    href="/contact"
-                    className="mt-8 text-sm font-semibold leading-6 text-[var(--primary-blue)] hover:text-[var(--primary-light-blue)]"
-                  >
-                    Contact Us <span aria-hidden="true">→</span>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
+        <section className="py-16 sm:py-24">
+          <div className="mx-auto mt-16 max-w-7xl space-y-24 sm:mt-20">
+                        {services.map((service, index) => (
+                          <motion.div
+                            key={service.title}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            viewport={{ once: true }}
+                            className={`flex flex-col gap-12 lg:flex-row lg:items-center ${
+                              index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+                            }`}
+                          >
+                            <div className="relative h-[400px] w-full lg:w-1/2">
+                              <Image
+                                src={service.image}
+                                alt={service.title}
+                                fill
+                                className="rounded-2xl object-cover"
+                              />
+                            </div>
+                            <div className="flex flex-col justify-center lg:w-1/2">
+                              <h3 className="text-2xl font-semibold leading-8 text-gray-900">{service.title}</h3>
+                              <p className="mt-4 text-base leading-7 text-gray-600 text-justify">{service.description}</p>
+                              <p className="mt-4 text-base leading-7 text-gray-600 text-justify">{service.d2}</p>
+                              <Link
+                                href="/contact"
+                                className="mt-8 inline-flex items-center text-sm font-semibold leading-6 text-[var(--primary-blue)] hover:text-[var(--primary-light-blue)]"
+                              >
+                                Contact Us <span aria-hidden="true" className="ml-2">→</span>
+                              </Link>
+                            </div>
+                          </motion.div>
+                        ))}
+                      </div>
         </section>
 
         {/* Process Section */}

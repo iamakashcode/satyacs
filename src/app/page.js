@@ -111,15 +111,15 @@ export default function Home() {
                     transition={{ duration: 0.5 }}
                     className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
                   >
-                    Your Trusted Partner in Certification & Compliance
+                    Introduction
                   </motion.h1>
                   <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="mt-6 text-lg leading-8 text-gray-600"
+                    className="mt-6 text-lg leading-8 text-gray-600 text-justify"
                   >
-                    We provide expert guidance and support for all your certification needs, helping you navigate complex regulatory requirements and achieve compliance with Indian standards.
+                    Bureau of Indian Standards in short BIS, is rendering a significant role in ensuring the manufactured products meet specific quality & safety standards in India. It is mandatory for certain manufacturers, whether Indian or foreign, producing products that fall under mandatory certification categories are required to obtain a BIS certificate. This process is also helping in increasing the credibility of manufacturer & their products. The Bureau of Indian Standards has laid down certain procedure for obtaining certification. Satya Consultancy Services, a technically oriented liaisoning organization is at your service for the purpose.     
                   </motion.p>
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -162,40 +162,42 @@ export default function Home() {
         <section className="py-14 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Services</h2>
-              <p className="mt-2 text-lg leading-8 text-gray-600">
+              {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Services</h2> */}
+              {/* <p className="mt-2 text-lg leading-8 text-gray-600">
                 Comprehensive certification and compliance solutions for your business needs.
-              </p>
+              </p> */}
             </div>
-            <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-              {topServices.map((service, index) => (
+            <div className="mx-auto mt-16 max-w-7xl space-y-24 sm:mt-20">
+              {services.map((service, index) => (
                 <motion.div
                   key={service.title}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex flex-col justify-between rounded-2xl bg-white p-8 ring-1 ring-gray-200 xl:p-10"
+                  className={`flex flex-col gap-12 lg:flex-row lg:items-center ${
+                    index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+                  }`}
                 >
-                  <div>
-                    <div className="relative h-48 w-full mb-6">
-                      <Image
-                        // src={`/images/services/${service.title.toLowerCase().replace(/\s+/g, '-')}.jpg`}
-                        src={service.image}
-                        alt={service.title}
-                        fill
-                        className="rounded-lg object-cover"
-                      />
-                    </div>
-                    <h3 className="text-lg font-semibold leading-8 text-gray-900">{service.title}</h3>
-                    <p className="mt-4 text-sm leading-6 text-gray-600">{service.description}</p>
+                  <div className="relative h-[400px] w-full lg:w-1/2">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="rounded-2xl object-cover"
+                    />
                   </div>
-                  <Link
-                    href="/contact"
-                    className="mt-8 text-sm font-semibold leading-6 text-[var(--primary-blue)] hover:text-[var(--primary-light-blue)]"
-                  >
-                    Contact Us <span aria-hidden="true">→</span>
-                  </Link>
+                  <div className="flex flex-col justify-center lg:w-1/2">
+                    <h3 className="text-2xl font-semibold leading-8 text-gray-900">{service.title}</h3>
+                    <p className="mt-4 text-base leading-7 text-gray-600 text-justify">{service.description}</p>
+                    <p className="mt-4 text-base leading-7 text-gray-600 text-justify">{service.d2}</p>
+                    <Link
+                      href="/contact"
+                      className="mt-8 inline-flex items-center text-sm font-semibold leading-6 text-[var(--primary-blue)] hover:text-[var(--primary-light-blue)]"
+                    >
+                      Contact Us <span aria-hidden="true" className="ml-2">→</span>
+                    </Link>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -253,7 +255,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-14 sm:py-24">
+        {/* <section className="py-14 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What Our Clients Say</h2>
@@ -281,7 +283,7 @@ export default function Home() {
                           className="rounded-full object-cover"
                         />
                       </div> */}
-                      <div>
+                      {/* <div>
                         <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
                           {testimonial.author}
                         </h3>
@@ -294,7 +296,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </section>  */}
 
         {/* Call to Action Section */}
         <section className="relative isolate mt-10 px-6 py-32 sm:py-40 lg:px-8">

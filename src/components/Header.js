@@ -11,7 +11,7 @@ const navigation = [
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/services' },
   { name: 'Process', href: '/process' },
-  { name: 'Forms', href: '/forms' },
+  { name: 'Documents', href: '/documents' },
   { name: 'Contact', href: '/contact' },
 ]
 
@@ -20,10 +20,10 @@ export default function Header() {
 
   return (
     <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <Image src="/logo.png" alt="Satya Logo" width={40} height={40} className="h-10 w-auto" />
+            <Image src="/logo.png" alt="Satya Logo" width={70} height={70} />
           </Link>
         </div>
         <div className="flex lg:hidden">

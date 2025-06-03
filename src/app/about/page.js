@@ -54,7 +54,7 @@ export default function About() {
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <Hero heading="About Satya" description="Your trusted partner in certification and compliance solutions."/>
+        <Hero heading="About Satya Consultacy & Services" description="Your trusted partner in certification and compliance solutions."/>
 
         {/* Mission & Vision */}
         <section className="py-24 sm:py-32">
