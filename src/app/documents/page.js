@@ -59,8 +59,16 @@ export default function Forms() {
                         {form}
                       </h3>
                     </div>
+                    
                   </motion.div>
                 ))}
+                <div className="flex-auto">
+                      <p className='text-lg font-semibold'>Note : </p>
+                      <ul className='list-disc pl-4'>
+                        <li className='pt-2'>Documents are subject to variation</li>
+                        <li className='pt-2'>During Audit by BIS team it is liability of the overseas manufacturer to arrange for VISA, travelling & staying facilities.</li>
+                      </ul>
+                    </div>
               </div>
             </div>
           </div>

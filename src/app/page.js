@@ -119,7 +119,7 @@ export default function Home() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="mt-6 text-lg leading-8 text-gray-600 text-justify"
                   >
-                    Bureau of Indian Standards in short BIS, is rendering a significant role in ensuring the manufactured products meet specific quality & safety standards in India. It is mandatory for certain manufacturers, whether Indian or foreign, producing products that fall under mandatory certification categories are required to obtain a BIS certificate. This process is also helping in increasing the credibility of manufacturer & their products. The Bureau of Indian Standards has laid down certain procedure for obtaining certification. Satya Consultancy Services, a technically oriented liaisoning organization is at your service for the purpose.     
+                    Bureau of Indian Standards in short BIS, is rendering a significant role in ensuring the manufactured products meet specific quality & safety standards in India. It is mandatory for certain manufacturers, whether Indian or foreign, producing products that fall under mandatory certification categories are required to obtain a BIS certificate. This process is also helping in increasing the credibility of manufacturer & their products. The Bureau of Indian Standards has laid down certain procedure for obtaining certification. Satya Consultancy Services, a technically oriented liaisoning organization is at your service for the purpose.    
                   </motion.p>
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -153,6 +153,55 @@ export default function Home() {
                     priority
                   />
                 </motion.div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* about section */}
+        <section className="py-14 sm:py-24 bg-gray-50">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:text-center">
+              <h2 className="text-base font-semibold leading-7 text-[var(--primary-blue)]">About Us</h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Your Trusted Partner in Certification
+              </p>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+              We provide services to businesses to navigate the complexities of obtaining BIS certification for their products. We assist to provide guidance, application preparation, product testing, liaison with BIS authorities, and ensuring compliance with relevant Indian standards.
+              </p>
+            </div>
+            <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              <div className="relative">
+                <Image
+                  src="/images/about/1.png"
+                  alt="Our Office"
+                  width={800}
+                  height={600}
+                  className="rounded-2xl shadow-xl ring-1 ring-gray-400/10"
+                />
+              </div>
+              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+                <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-1">
+                  {features.map((feature, index) => (
+                    <motion.div
+                      key={feature.title}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                      className="flex flex-col"
+                    >
+                      <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                        <div className="h-10 w-10 flex items-center justify-center rounded-lg bg-[var(--primary-blue)] text-white">
+                          {feature.icon}
+                        </div>
+                        {feature.title}
+                      </dt>
+                      <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                        <p className="flex-auto">{feature.description}</p>
+                      </dd>
+                    </motion.div>
+                  ))}
+                </dl>
               </div>
             </div>
           </div>
@@ -203,56 +252,286 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* About Us Section */}
-        <section className="py-14 sm:py-24 bg-gray-50">
+        <div className="pb-8">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl lg:text-center">
-              <h2 className="text-base font-semibold leading-7 text-[var(--primary-blue)]">About Us</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Your Trusted Partner in Certification
-              </p>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                We provide services to businesses to navigate the complexities of obtaining BIS certification for their products. We assist to provide guidance, application preparation, product testing, liaison with BIS authorities, and ensuring compliance with relevant Indian standards. 
-              </p>
+            <div className="mx-auto text-center">
+              <p className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl bg-[var(--primary-blue)] text-white p-4 rounded-lg mb-3">Procedure, documents & other terms & conditions  :</p>
             </div>
-            <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-              <div className="relative">
-                <Image
-                  src="/images/about/1.png"
-                  alt="Our Office"
-                  width={800}
-                  height={600}
-                  className="rounded-2xl shadow-xl ring-1 ring-gray-400/10"
-                />
-              </div>
-              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-                <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-1">
-                  {features.map((feature, index) => (
-                    <motion.div
-                      key={feature.title}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                      viewport={{ once: true }}
-                      className="flex flex-col"
+            <div className='pt-6'>
+              <p className='text-lg font-semibold pb-2'>Procedures:</p>
+              <ul>
+                <li>1.	Normal Procedure (takes 60 - 65 days)</li>
+                <li>2.	Simplified Procedure (takes 35 - 40 days)</li>
+              </ul>
+            </div>
+            <div className='pt-6'>
+              <p className='text-lg font-semibold pb-2'>Normal Procedure:</p>
+              <ul>
+                <li>1.	Relevant Product Code selection</li>
+                <li>2.	ISI Mark Registration online Application form fill up with the required documents</li>
+                <li>3.	Factory audit by BIS authorized auditor</li>
+                <li>4.	Sample Report submission by BIS authorized laboratory</li>
+                <li>5.	Grant of licence by BIS Authority. </li>
+              </ul>
+            </div>
+            <div className='pt-6'>
+              <p className='text-lg font-semibold pb-2'>Simplified Procedure:</p>
+              <ul>
+                <li>1.	Initially, the applying party submits the report of the samples already tested and approved by BIS as per Indian Standard.</li>
+                <li>2.	Afterward, the applicant has to submit BIS online registration application and BIS Certification Cost along with other required sets of documents.</li>
+                <li>3.	During scrutiny of application documents, the BIS official will conduct an inspection process of products along with the factory/industry.</li>
+                <li>4.	Once the inspection gets completed, the sealed samples of the goods are further sent for testing at the BIS approved laboratories.</li>
+                <li>5.	Then, if verified and approved according to the recommended standards, the certificate is granted by the BIS within 35 to 40 days of application</li>
+              </ul>
+            </div>
+            <div className='pt-6'>
+              <p className='text-lg font-semibold pb-2'>Documentation</p>
+              <p>Documentations requirement is very specific and generic for the BIS Certification application which includes:</p>
+              <ul>
+                <li>1.	Laboratory Test Reports as per Product Standard</li>
+                <li>2.	Factory Registration Documents</li>
+                <li>3.	Manufacturing process flow chart</li>
+                <li>4.	In-house Testing Facilities</li>
+                <li>5.	Details of Authorized Signatory and other related documents.</li>
+              </ul>
+            </div>
+            <div className='pt-6'>
+              <p className='text-lg font-semibold pb-2'>Documents Required For BIS Certification</p>
+              <p>Below is the list of documents needed to get BIS certificate for products:</p>
+              <ul>
+                <li>1.	Name and address proof of office</li>
+                <p>
+                  <ul className='pl-4'>
+                    <li>1.	Certificate from the registrar of the firm, OR</li>
+                    <li>2.	Certificate from the directorate of industries, OR</li>
+                    <li>3.	Certificate from industries centre, OR</li>
+                    <li>4.	Memorandum of articles, etc</li>
+                  </ul>
+                </p>
+                <li>2.	Name and address proof of factory</li>
+                <ul className='pl-4'>
+                    <li>1.	Certificate from the registrar of the firm, OR</li>
+                    <li>2.	Certificate from the directorate of industries, OR</li>
+                    <li>3.	Certificate from industries centre, OR</li>
+                    <li>4.	Memorandum of articles</li>
+                    <li>5.	Valid lease deed showing occupancy of the firm over the premises, etc</li>
+                  </ul>
+                <li>3.	Valid MSME certificate, if applicable</li>
+                <li>4.	Authorized representative letter, in the case signed by a person other than the CEO of the firm.</li>
+                <li>5.	Manufacturing process flow chart</li>
+                <li>6.	Manufacturing machinery list </li>
+                <li>7.	Whether any manufacturing operation is outsourced</li>
+                <li>8.	Testing equipments list</li>
+                <li>9.	Any testing arrangements outside the factory</li>
+                <li>10.	Calibration certificates copy, if available (NABL approved)</li>
+                <li>11.	In-house reports</li>
+                <li>12.	Third-party laboratory test reports as per Indian Standards, if applicable</li>
+                <li>13.	Layout Plan of the factory indicating the office, lab, storage area, production area, and finished good storage.</li>
+                <li>14.	Test certificate copy of each raw material.</li>
+              </ul>
+                <p>The above listed are the major documents required for BIS certification. Therefore, make sure you have gathered all of them before applying for BIS certificate.</p>
+            </div>
+            <div className='pt-6'>
+              <p className='text-lg font-semibold pb-2'>How To Apply For BIS Certification?</p>
+              <p>Here we have listed the easiest way to apply for BIS Certification, follow these steps accordingly:</p>
+              <ul className='list-disc pl-4'>
+                <li>Access the BIS certification portal and log in.</li>
+                <li>Fill out and submit the online application form.</li>
+                <li>Request product testing through the portal.</li>
+                <li>Make the necessary payment for the application.</li>
+                <li>The application will go through scrutiny, approval, & queries.</li>
+                <li>A BIS officer will inspect your product.</li>
+                <li>Obtain login credentials from the BIS website.</li>
+                <p className='pt-2'>By following these steps, you will be able to apply for the BIS Certification process efficiently.</p>
+              </ul>
+            </div>
+            <div className='pt-6'>
+              <p className='text-lg font-semibold pb-2'>What Are The Penalties For Non-Compliance With BIS Certificate?</p>
+              <p>There are several penalties you will face if you don’t follow the BIS Standards such as fines, legal action, reputation damage, etc. Therefore it’s important to follow the BIS standards to avoid these kinds of issues and difficulties.</p>
+            </div>
+            <div className='pt-6'>
+              <p className='text-lg font-semibold pb-2'>What Is The Validity Period Of BIS Certification?</p>
+              <p>The BIS Certificate is valid for 1 year. After the expiration, the BIS certification must be renewed by submitting an updated application form.</p>
+            </div>
+            <div className='pt-6'>
+              <p className='text-lg font-semibold pb-2'>Can BIS Certification Be Transferred?</p>
+              <p>Yes, BIS Certification can be transferred. If you want to change the location or business structure, you must file a new application.</p>
+            </div>
+          </div>
+        </div>
+
+        <section className="py-14 sm:py-24">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto mt-16 max-w-7xl space-y-24 sm:mt-20">
+                <motion.div
+                  key="FMCS"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  viewport={{ once: true }}
+                  className={`flex flex-col gap-12 lg:flex-row lg:items-center}`}
+                >
+                  <div className="relative h-[400px] w-full lg:w-1/2">
+                    <Image
+                      src="/images/services/2.png"
+                      alt="/images/services/2.png"
+                      fill
+                      className="rounded-2xl object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center lg:w-1/2">
+                    <h3 className="text-2xl font-semibold leading-8 text-gray-900">ISI MARK CERTIFICATION - FOREIGN MANUFACTURERS CERTIFICATION SCHEME (FMCS) </h3>
+                    <p className="mt-4 text-base leading-7 text-gray-600 text-justify">The Foreign Manufacturers Certification Scheme (FMCS) is tailored for manufacturers out of India who wish to export their products to the Indian market. Foreign manufacturers can apply for BIS certification through an Authorized Indian Representative (AIR) or by establishing their own representative office in India. FMCS certification facilitates international trade by ensuring that imported products meet Indian standards, improving consumer safety and protecting national interests. It smoothens the process for foreign manufacturers to certify their products in line with Indian regulations.</p>
+                    <p className="mt-4 text-base leading-7 text-gray-600 text-justify">
+                    FMCS (ISI Mark) is a Scheme operated by the Bureau of Indian Standards since year 2000 under Scheme-I of Schedule-II, BIS Act, 2016 and (Conformity Assessment) Regulations, 2018 for foreign manufacturers. This scheme enables the overseas applicants/manufacturers to use the standard mark, which is also called ISI Mark, to sell their products in India. The foreign manufacturers Certification Department (FMCD) is the only eligible authority that can grant BIS Certificate for import to the foreign manufacturers. The major motive of BIS for granting a Manufacturing certificate to Foreign manufactures is that the public gets good quality, safe, reliable and risk-free products. 
+                    </p>
+                    <p className="mt-4 text-base leading-7 text-gray-600 text-justify">
+                    BIS FMCS Certificate in India from the FMCD department is meant for the manufacturing units located overseas, which will undergo for factory audit to determine whether the manufacturer is complying with all the necessary requirements illustrated by BIS. ISI Mark under Foreign Manufacturers Certification Scheme is issued by FMCD since 2000. BIS Standard Mark or ISI Mark consists of Licence number as CM/L-XXXXXXXXXX at the bottom of ISI Mark and Indian standard number at the top of above ISI Mark. This mark shall be rewarded by the Bureau of Indian Standards after the successful grant of the BIS Certificate. Approx. 700 items are listed by BIS under FMCS certification & are available on BIS website.
+                    </p>
+                    <Link
+                      href="/contact"
+                      className="mt-8 inline-flex items-center text-sm font-semibold leading-6 text-[var(--primary-blue)] hover:text-[var(--primary-light-blue)]"
                     >
-                      <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                        <div className="h-10 w-10 flex items-center justify-center rounded-lg bg-[var(--primary-blue)] text-white">
-                          {feature.icon}
-                        </div>
-                        {feature.title}
-                      </dt>
-                      <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                        <p className="flex-auto">{feature.description}</p>
-                      </dd>
-                    </motion.div>
-                  ))}
-                </dl>
-              </div>
+                      Contact Us <span aria-hidden="true" className="ml-2">→</span>
+                    </Link>
+                  </div>
+                </motion.div>
             </div>
           </div>
         </section>
+
+
+        <div className="pb-8">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto text-center">
+              <p className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl bg-[var(--primary-blue)] text-white p-4 rounded-lg mb-3">Procedure, documents & other terms & conditions :</p>
+            </div>
+            <div className='pt-6'>
+              <p className='text-lg font-semibold pb-2'>The Certification process involves the following steps:</p>
+              <ul>
+                <li className='font-semibold'>1.	Submit application:</li>
+                <p>
+                  <ul className='pl-4 list-disc pt-1'>
+                    <li>Compile all required documents</li>
+                    <li>Submit the application with required documents to BIS online and hardcopy to FMCD department</li>
+                    <li>BIS authority will verify the application</li>
+                  </ul>
+                </p>
+                <li>2.	Query raised (if any):</li>
+                <p>
+                  <ul className='pl-4 list-disc pt-1'>
+                    <li>In case, any document or test equipment or any other requirement is missing or incomplete, communication will be done by email with applicant</li>
+                    <li>If the application is found satisfactory in all respects, it will be recorded</li>
+                    <li>Acknowledgement number will be allotted for future purpose</li>
+                  </ul>
+                </p>
+                <li className='font-semibold'>3.	Audit/Inspection:</li>
+                <p>
+                  <ul className='pl-4 list-disc pt-1'>
+                    <li>BIS Officer will arrange a visit at factory premises of applicant on the mutually agreed date</li>
+                    <li>Remittance of inspection/audit fee</li>
+                    <li>BIS Officer will verify the manufacturing process, testing infrastructure and also test the product in your in-house laboratory</li>
+                    <li>BIS Officer will collect the sample, seal it, and forward it for testing with an independent laboratory</li>
+                  </ul>
+                </p>
+                <li className='font-semibold'>4.	Sample Testing:</li>
+                <p>
+                  <ul className='pl-4 list-disc pt-1'>
+                    <li>Sample collected sent to BIS Approval Laboratory</li>
+                    <li>BIS(FMCS) receive the test report</li>
+                    <li>Charges for testing will be paid by the application firm</li>
+                  </ul>
+                </p>
+                <li className='font-semibold'>5.	Grant of Licence:</li>
+                <p>
+                  <ul className='pl-4 list-disc pt-1'>
+                    <li>Satisfactory inspection report of the auditor visited the factory premises, and test report of the product received according to Indian Standards</li>
+                    <li>Applicant should pay a Licence fee, advance minimum Marking fee & if any outstanding due</li>
+                    <li>Letter for Grant of Licence issued</li>
+                  </ul>
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <section className="py-14 sm:py-16">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto mt-16 max-w-7xl space-y-24 sm:mt-20">
+                <motion.div
+                  key="FMCS"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  viewport={{ once: true }}
+                  className={`flex flex-col gap-12 lg:flex-row lg:items-center}`}
+                >
+                  <div className="flex flex-col justify-center lg:w-1/2">
+                    <h3 className="text-2xl font-semibold leading-8 text-gray-900">COMPULSORY REGISTRATION SCHEME (CRS) :</h3>
+                    <p className="mt-4 text-base leading-7 text-gray-600 text-justify">BIS Licence for Electronic,  IT products and their operation is governed by the conformity assessment scheme outlined in Scheme II of Schedule II of the BIS (Conformity Assessment) Regulations, 2018. Under the Compulsory Registration Scheme (CRS), the Bureau of Indian Standards issues a BIS registration certificate to manufacturers to use a standard mark with a unique registration number on their electronics and IT products. The products must be certified before being placed on the Indian market. The primary goals of CRS is to protect consumer safety, safeguard the environment, and enhance national security. These products must comply with relevant Indian standards and be tested in ACPI-registered laboratories. BIS CRS registration is a prerequisite for their sale or import into India.</p>
+                    <Link
+                      href="/contact"
+                      className="mt-8 inline-flex items-center text-sm font-semibold leading-6 text-[var(--primary-blue)] hover:text-[var(--primary-light-blue)]"
+                    >
+                      Contact Us <span aria-hidden="true" className="ml-2">→</span>
+                    </Link>
+                  </div>
+                  <div className="relative h-[400px] w-full lg:w-1/2">
+                    <Image
+                      src="/images/services/2.png"
+                      alt="/images/services/2.png"
+                      fill
+                      className="rounded-2xl object-cover"
+                    />
+                  </div>
+                </motion.div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-14 sm:py-16">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto mt-16 max-w-7xl space-y-24 sm:mt-20">
+                <motion.div
+                  key="FMCS"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  viewport={{ once: true }}
+                  className={`flex flex-col gap-12 lg:flex-row lg:items-center}`}
+                >
+                  <div className="relative h-[400px] w-full lg:w-1/2">
+                    <Image
+                      src="/images/services/2.png"
+                      alt="/images/services/2.png"
+                      fill
+                      className="rounded-2xl object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center lg:w-1/2">
+                    <h3 className="text-2xl font-semibold leading-8 text-gray-900">CERTIFICATE OF CONFORMITY (Scheme - IV)</h3>
+                    <p className="mt-4 text-base leading-7 text-gray-600 text-justify">The Bureau of Indian Standards (BIS) began issuing Certificates of Conformity in accordance with Scheme-IV of Schedule II of the BIS (Conformity Assessment) Regulation, 2018. The Bureau may issue a Certificate of Conformity (CoC) for goods and articles (products) that are manufactured in accordance with the specifications outlined in the relevant Indian Standards. A Certificate of Conformity from BIS is necessary for every manufacturer of a product covered by a CoC. Each product covered by mandatory CoC must be marked with the CoC Number. All CoC-covered products must be manufactured using BIS Standard-marked (ISI Marked) materials. Due to several factors such as national security, public interest, the prevention of unfair trade practices, etc., the government has made a number of products subject to mandatory compliance with Indian Standards through Quality Control Orders</p>
+                    <p className='mt-4 text-base leading-7 text-gray-600 text-justify font-semibold'>PRODUCTS COVERED UNDER CERTIFICATE OF CONFORMITY (COC)</p>
+                    <p className='text-base leading-7 text-gray-600 text-justify'>BIS has added the following two products in compliance with the CoC scheme:</p>
+                    <ul className='pl-4 list-disc pt-1'>
+                      <li>Stampings/laminations/cores of transformers (with or without winding)</li>
+                      <li>Requirement of Retro-Reflective Devices for Bicycles</li>
+                    </ul>
+                    <Link
+                      href="/contact"
+                      className="mt-8 inline-flex items-center text-sm font-semibold leading-6 text-[var(--primary-blue)] hover:text-[var(--primary-light-blue)]"
+                    >
+                      Contact Us <span aria-hidden="true" className="ml-2">→</span>
+                    </Link>
+                  </div>
+                  
+                </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* About Us Section */}
+        
 
         {/* Testimonials Section */}
         {/* <section className="py-14 sm:py-24">
